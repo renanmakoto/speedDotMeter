@@ -1,3 +1,5 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
 :root, [data-bs-theme=light] {
     --bs-primary-rgb: 41, 197,207;
 }
@@ -13,7 +15,7 @@
     --bs-btn-active-color: #fff;
     --bs-btn-active-bg: #20858c;
     --bs-btn-active-border-color: #20858c;
-    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, )
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, );
     --bs-btn-disabled-color: #fff;
     --bs-btn-disable-bg: #29c5cf;
     --bs-btn-disabled-border-color: #29c5cf;
