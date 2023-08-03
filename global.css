@@ -20,3 +20,8 @@
     --bs-btn-disable-bg: #29c5cf;
     --bs-btn-disabled-border-color: #29c5cf;
 }
+
+#mapDetail {
+    height: 300px;
+    background-color: #ccc;
+}
