@@ -2,7 +2,7 @@
 
 <p align="center">A speedometer I developed to practise my skills.</p>
 
-<p align="center">https://renanmakoto.github.io/speedometer/</p>
+<p align="center">https://renanmakoto.github.io/speedDotMeter/</p>
 
 <div align="center">
   
