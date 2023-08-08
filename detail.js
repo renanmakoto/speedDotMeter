@@ -2,19 +2,19 @@ const params = new URLSearchParams(window.location.search)
 const rideID = params.get("id")
 const ride = getRideRecord(rideID)
 
+
 document.addEventListener("DOMContentLoaded", async () => {
 
+    const firstPosition = ride.data[0]
+    const firstLocationData = await getLocationData(firstPosition.latitude, firstPosition.longitude)
 
-const firstPosition = ride.data[0]
-const firstLocationData = await getLocationData(firstPosition.latitude, firstPosition.longitude)
-
-
-const dataElement = document.createElement("div")
+    const dataElement = document.createElement("div")
     dataElement.className = "flex-fill d-flex flex-column"
 
     const cityDiv = document.createElement("div")
     cityDiv.innerText = `${firstLocationData.city} - ${firstLocationData.countryCode}`
     cityDiv.className = "text-primary mb-2"
+
 
     const maxSpeedDiv = document.createElement("div")
     maxSpeedDiv.innerText = `Max speed: ${getMaxSpeed(ride.data)} Km/h`
@@ -40,17 +40,19 @@ const dataElement = document.createElement("div")
 
     const deleteButton = document.querySelector("#deleteBtn")
     deleteButton.addEventListener("click", () => {
+
         deleteRide(rideID)
         window.location.href = "./"
+
     })
+
 
     const map = L.map("mapDetail")
     map.setView([firstPosition.latitude, firstPosition.longitude], 13)
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
         minZoom: 5,
-        maxZoom: 16,
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-    }).addTo(map)
+        maxZoom: 20,
+    }).addTo(map);
 
     const positionsArray = ride.data.map((position => {
         return [position.latitude, position.longitude]
@@ -60,4 +62,5 @@ const dataElement = document.createElement("div")
     polyline.addTo(map)
 
     map.fitBounds(polyline.getBounds())
+
 })

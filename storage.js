@@ -10,23 +10,24 @@ function createNewRide() {
 }
 
 function deleteRide(rideID) {
+
     localStorage.removeItem(rideID)
 }
 
 function getAllRides() {
+
     return Object.entries(localStorage)
 }
 
 function getRideRecord(rideID) {
     return JSON.parse(localStorage.getItem(rideID))
 }
-
 function saveRideRecord(rideID, rideRecord) {
     localStorage.setItem(rideID, JSON.stringify(rideRecord))
-
 }
 
 function addPosition(rideID, position) {
+
     const rideRecord = getRideRecord(rideID)
     const newData = {
         accuracy: position.coords.accuracy,
@@ -47,3 +48,4 @@ function updateStopTime(rideID) {
     rideRecord.stopTime = Date.now()
     saveRideRecord(rideID, rideRecord)
 }
+
