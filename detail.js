@@ -38,6 +38,12 @@ const dataElement = document.createElement("div")
 
     document.querySelector("#data").appendChild(dataElement)
 
+    const deleteButton = document.querySelector("#deleteBtn")
+    deleteButton.addEventListener("click", () => {
+        deleteRide(rideID)
+        window.location.href = "./"
+    })
+
     const map = L.map("mapDetail")
     map.setView([firstPosition.latitude, firstPosition.longitude], 13)
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
