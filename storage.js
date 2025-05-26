@@ -10,7 +10,6 @@ function createNewRide() {
 }
 
 function deleteRide(rideID) {
-
     localStorage.removeItem(rideID)
 }
 
