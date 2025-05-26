@@ -14,6 +14,7 @@ startBtn.addEventListener("click", () => {
         speedElement.innerText = position.coords.speed ?
             (position.coords.speed * 3.6).toFixed(1) : 0
     }
+    
     function handleError(error) {
         console.log(error.msg)
     }
