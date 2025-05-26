@@ -14,7 +14,6 @@ function deleteRide(rideID) {
 }
 
 function getAllRides() {
-
     return Object.entries(localStorage)
 }
 
