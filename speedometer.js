@@ -19,6 +19,7 @@ startBtn.addEventListener("click", () => {
     function handleError(error) {
         console.log(error.msg)
     }
+    
     const options = { enableHighAccuracy: true }
     currentRide = createNewRide()
     watchID = navigator.geolocation.watchPosition(handleSuccess, handleError, options)
