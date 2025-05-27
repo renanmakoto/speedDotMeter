@@ -25,7 +25,6 @@ startBtn.addEventListener("click", () => {
     watchID = navigator.geolocation.watchPosition(handleSuccess, handleError, options)
     startBtn.classList.add("d-none")
     stopBtn.classList.remove("d-none")
-
 })
 
 stopBtn.addEventListener("click", () => {
