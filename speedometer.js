@@ -38,5 +38,4 @@ stopBtn.addEventListener("click", () => {
     stopBtn.classList.add("d-none")
 
     window.location.href = "./"
-
 })
