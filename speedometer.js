@@ -4,6 +4,7 @@ const stopBtn = document.querySelector("#stop")
 
 let watchID = null
 let currentRide = null
+
 startBtn.addEventListener("click", () => {
     if (watchID)
         return
