@@ -24,7 +24,6 @@ allRides.forEach(async ([id, value]) => {
     mapElement.classList.add("bg-secondary")
     mapElement.classList.add("rounded-4")
 
-
     const dataElement = document.createElement("div")
     dataElement.className = "flex-fill d-flex flex-column"
 
