@@ -67,5 +67,4 @@ allRides.forEach(async ([id, value]) => {
     }).addTo(map);
 
     L.marker([firstPosition.latitude, firstPosition.longitude]).addTo(map)
-
 })
