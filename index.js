@@ -57,7 +57,6 @@ allRides.forEach(async ([id, value]) => {
     itemElement.appendChild(mapElement)
     itemElement.appendChild(dataElement)
 
-
     const map = L.map(mapID, {
         attributionControl: false,
         zoomControl: false,
