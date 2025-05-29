@@ -31,7 +31,6 @@ allRides.forEach(async ([id, value]) => {
     cityDiv.innerText = `${firstLocationData.city} - ${firstLocationData.countryCode}`
     cityDiv.className = "text-primary mb-2"
 
-
     const maxSpeedDiv = document.createElement("div")
     maxSpeedDiv.innerText = `Max speed: ${getMaxSpeed(ride.data)} Km/h`
     maxSpeedDiv.className = "h5"
