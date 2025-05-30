@@ -42,7 +42,6 @@ document.addEventListener("DOMContentLoaded", async () => {
         window.location.href = "./"
     })
 
-
     const map = L.map("mapDetail")
     map.setView([firstPosition.latitude, firstPosition.longitude], 13)
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
