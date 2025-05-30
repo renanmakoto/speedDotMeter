@@ -38,7 +38,6 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     const deleteButton = document.querySelector("#deleteBtn")
     deleteButton.addEventListener("click", () => {
-
         deleteRide(rideID)
         window.location.href = "./"
     })
