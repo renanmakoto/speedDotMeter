@@ -2,7 +2,6 @@ const params = new URLSearchParams(window.location.search)
 const rideID = params.get("id")
 const ride = getRideRecord(rideID)
 
-
 document.addEventListener("DOMContentLoaded", async () => {
 
     const firstPosition = ride.data[0]
