@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
         minZoom: 5,
         maxZoom: 20,
-    }).addTo(map);
+    }).addTo(map)
 
     const positionsArray = ride.data.map((position => {
         return [position.latitude, position.longitude]
