@@ -6,6 +6,7 @@ async function getLocationData(latitude, longitude) {
 
 function getMaxSpeed(positions) {
     let maxSpeed = 0
+    
     positions.forEach(position => {
         if (position.speed != null && position.speed > maxSpeed)
             maxSpeed = position.speed
