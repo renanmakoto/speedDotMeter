@@ -64,7 +64,7 @@ allRides.forEach(async ([id, value]) => {
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
         minZoom: 5,
         maxZoom: 20
-    }).addTo(map);
+    }).addTo(map)
 
     L.marker([firstPosition.latitude, firstPosition.longitude]).addTo(map)
 })
