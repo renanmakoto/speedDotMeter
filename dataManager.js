@@ -79,7 +79,6 @@ function getStartDate(ride) {
     const hour = d.toLocaleString("en-US", { hour: "2-digit", hour12: false })
     const minute = d.toLocaleString("en-US", { minute: "2-digit" })
 
-
     return `${hour}:${minute} - ${month} ${day}, ${year} `
 
 
