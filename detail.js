@@ -57,5 +57,4 @@ document.addEventListener("DOMContentLoaded", async () => {
     polyline.addTo(map)
 
     map.fitBounds(polyline.getBounds())
-
 })
