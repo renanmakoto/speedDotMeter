@@ -81,5 +81,4 @@ function getStartDate(ride) {
 
     return `${hour}:${minute} - ${month} ${day}, ${year} `
 
-
 }
