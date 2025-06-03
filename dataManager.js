@@ -69,7 +69,6 @@ function getDuration(ride) {
 }
 
 function getStartDate(ride) {
-
     const d = new Date(ride.startTime)
 
     const day = d.toLocaleString("en-US", { day: "numeric" })
